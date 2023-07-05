@@ -901,3 +901,28 @@ function getThongTinSanPhamFrom_TheGioiDiDong() {
 //     $(target).fadeIn(600);
 
 // });
+function Tracking() {
+    smartech('contact', 'LIST IDENTIFIER', {
+      'pk^email': 'khaileduy08@gmail.com',
+      'mobile': '0345501101',
+      'FIRST_NAME': 'khai',
+      'LAST_NAME': 'le',
+      'COMPANY': 'aka',
+    }, function() {
+      smartech('identify', 'khaileduy08@gmail.com');
+      smartech('dispatch', 'home screen', { 'title': document.title });
+    });
+  }
+
+  function Tracking2() {
+    smartech('contact', 'LIST IDENTIFIER', {
+      'pk^email': 'khaileduy08@gmail.com',
+      'mobile': '0345501101',
+      'FIRST_NAME': 'khai',
+      'LAST_NAME': 'le',
+      'COMPANY': 'aka',
+    }, function() {
+      smartech('identify', 'khaileduy08@gmail.com');
+      smartech('dispatch', 'Product View', { 'productname': document.title });
+    });
+  }
